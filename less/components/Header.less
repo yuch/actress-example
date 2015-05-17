@@ -1,0 +1,36 @@
+.Header {
+  display: flex;
+  align-items: baseline;
+  padding: 24px;
+  width: 100%;
+  background-color: rgb(27, 43, 52);
+}
+
+.Header-brand {
+  font-size: 20px;
+  color: #fff;
+}
+
+.Header-navList {
+  display: flex;
+  padding-left: 24px;
+}
+
+.Header-navItem {
+  padding-left: 16px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+}
+
+.Header-navLink {
+  display: block;
+  color: rgba(255, 255, 255, .54);
+  transition: color .3s;
+
+  &:hover,
+  &:focus {
+    color: rgba(255, 255, 255, .87);
+  }
+}

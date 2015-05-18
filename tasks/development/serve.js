@@ -68,7 +68,7 @@ gulp.task('serve:scripts', function (done) {
  */
 gulp.task('serve', ['styles', 'scripts'], function () {
   browserSync.init({
-    server: { baseDir: './public' },
+    proxy: 'http://localhost:5000',
     browser: 'google chrome',
     notify: false
   });

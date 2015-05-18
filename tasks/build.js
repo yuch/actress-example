@@ -1,9 +1,9 @@
 var gulp = require('gulp');
 
 /**
- * Build css and js.
+ * Build all assets.
  *
  * Options:
- *   --production: Optimize output file.
+ *   --production: Optimize the compiled files.
  */
 gulp.task('build', ['styles', 'scripts']);

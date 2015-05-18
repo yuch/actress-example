@@ -1,11 +1,11 @@
 /**
  * Prevent gulp watch to be stopped on errors.
  *
- * @param {Object} error
+ * @param object error
  */
-var swallowError = function (error) {
+module.exports = function (error) {
+
   console.log(error.toString());
   this.emit('end');
-};
 
-module.exports = swallowError;
+};

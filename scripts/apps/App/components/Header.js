@@ -13,7 +13,8 @@ class Header extends React.Component {
    */
   navItems = {
     App: lang.nav.wellcome,
-    Counter: lang.nav.counter
+    Counter: lang.nav.counter,
+    ToDo: 'ToDo'
   };
 
   /**

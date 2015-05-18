@@ -1,7 +1,6 @@
 'use strict';
 
 import Application from 'app/foundations/Application';
-import modules from 'app/modules/app';
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +12,19 @@ import modules from 'app/modules/app';
 |
 */
 
-var app = new Application(modules);
+import App from 'app/apps/App/routes';
+import Footer from 'app/apps/Footer/Footer';
+
+var app = new Application({
+  'app': {
+    module: App
+  },
+
+  'footer': {
+    withoutRoute: true,
+    module: Footer
+  }
+});
 
 /*
 |--------------------------------------------------------------------------
